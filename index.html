@@ -1,3 +1,5 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sèvres — date et météo</title>
 <style>
   :root{
@@ -152,25 +154,26 @@
 
   .stats{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(4,1fr);
     gap:0;
     margin-top:24px;
     padding-top:16px;
     border-top:1px solid var(--rule);
   }
-  .stat{ padding:0 4px; }
+  .stat{ padding:0 3px; }
   .stat .label{
-    font-size:10px;
-    letter-spacing:.09em;
+    font-size:9.5px;
+    letter-spacing:.06em;
     text-transform:uppercase;
     color:var(--ink-soft);
     margin-bottom:4px;
   }
   .stat .value{
     font-variant-numeric: tabular-nums;
-    font-size:15px;
+    font-size:13.5px;
     font-weight:600;
     color:var(--ink);
+    white-space:nowrap;
   }
 
   .source{
@@ -226,11 +229,16 @@
         <div class="label">Min / Max</div>
         <div class="value">21° / 38°</div>
       </div>
+      <div class="stat">
+        <div class="label">Population</div>
+        <div class="value">22 303</div>
+      </div>
     </div>
 
     <p class="source">
       Relevé du 29 juillet 2026, 11h45 (Europe/Paris) ·
-      données <a href="https://open-meteo.com" target="_blank" rel="noopener">Open‑Meteo</a>
+      données <a href="https://open-meteo.com" target="_blank" rel="noopener">Open‑Meteo</a> ·
+      population <a href="https://www.insee.fr/fr/statistiques/2011101?geo=COM-92072" target="_blank" rel="noopener">Insee</a> (2023)
     </p>
   </div>
 </div>
